@@ -413,9 +413,9 @@ func (s *State) initDBInfo(config map[string]interface{}) error {
 		return errors.New("no tables found in database")
 	}
 
-	if err := checkPKeys(dbInfo.Tables); err != nil {
-		return err
-	}
+	//if err := checkPKeys(dbInfo.Tables); err != nil {
+	//	return err
+	//}
 
 	s.Schema = dbInfo.Schema
 	s.Tables = dbInfo.Tables
